@@ -12,7 +12,7 @@
             <div class="box box-widget widget-user">
                 <!-- Add the bg color to the header using any of the bg-* classes -->
                 <div class="widget-user-header bg-black" style="background: url('../images/gallery/full/10.jpg') center center;">
-                    <a href="" style="float: right;"
+                    <a href="{{ route('admin.profile.edit')}}" style="float: right;"
                     class="btn btn-rounded btn-success mb-5">
                     Edit Profile</a>
                   <h3 class="widget-user-username">
