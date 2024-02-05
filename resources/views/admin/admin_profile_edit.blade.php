@@ -20,28 +20,54 @@
                    <form novalidate="">
                      <div class="row">
                        <div class="col-12">
-                           <div class="form-group">
-                               <h5>Basic Text Input <span class="text-danger">*</span></h5>
-                               <div class="controls">
-                                   <input type="text" name="text" class="form-control" required="" data-validation-required-message="This field is required"> <div class="help-block"></div></div>
-                               <div class="form-control-feedback"><small>Add <code>required</code> attribute to field for required validation.</small></div>
-                           </div>
-                           <div class="form-group">
-                               <h5>Email Field <span class="text-danger">*</span></h5>
-                               <div class="controls">
-                                   <input type="email" name="email" class="form-control" required="" data-validation-required-message="This field is required"> <div class="help-block"></div></div>
-                           </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <h5>Username <span class="text-danger">*</span></h5>
+                                    <div class="controls">
+                                        <input type="text"
+                                        name="name" class="form-control"
+                                        required="" value="{{ $editData->name }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <h5>Email <span class="text-danger">*</span></h5>
+                                    <div class="controls">
+                                        <input type="email" name="email"
+                                        class="form-control" required=""
+                                        value="{{ $editData->email }}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                           <div class="form-group">
-                               <h5>File Input Field <span class="text-danger">*</span></h5>
-                               <div class="controls">
-                                   <input type="file" name="file" class="form-control" required=""> <div class="help-block"></div></div>
-                           </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <h5>Profile Picture <span class="text-danger">*</span></h5>
+                                    <div class="controls">
+                                        <input type="file" name="file"
+                                        class="form-control" required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <img class="rounded-circle"
+                                src="{{ (!empty($adminData->profile_photo_path))
+                                  ? url('upload/admin_images/'.$adminData->profile_photo_path)
+                                  : url('upload/no_image.jpg')}}"
+                                alt="User Avatar" style="width: 100px; height:100px;">
+                            </div>
+                        </div>
+
+
 
                        <div class="text-xs-right">
-                           <button type="submit"
-                           class="btn btn-rounded btn-info">
-                           Submit</button>
+                            <input type="submit" value="Update"
+                            class="btn btn-primary btn-rounded
+                            mb-5">
                        </div>
                    </form>
 
