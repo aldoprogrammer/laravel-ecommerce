@@ -20,5 +20,25 @@ class AdminProfileController extends Controller
         return view('admin.admin_profile_edit', compact('editData'));
     }
 
+    public function adminProfileUpdate(Request $request)
+    {
+        $data = Admin::find(1);
+        $data->name = $request->name;
+        $data->email = $request->email;
+        if ($request->file('profile_photo_path')) {
+            $file = $request->file('profile_photo_path');
+            @unlink(public_path('upload/admin_images/' . $data->profile_photo_path));
+            $filename = date('YmdHi') . $file->getClientOriginalName();
+            $file->move(public_path('upload/admin_images'), $filename);
+            $data['profile_photo_path'] = $filename;
+        }
+        $data->save();
+        $notification = [
+            'message' => 'Admin Profile Updated Successfully',
+            'alert-type' => 'success'
+        ];
+        return redirect()->route('admin.profile')->with($notification);
+    }
+
 
 }

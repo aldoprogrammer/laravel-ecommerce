@@ -18,7 +18,9 @@
            <div class="box-body">
              <div class="row">
                <div class="col">
-                   <form novalidate="">
+                   <form method="post" action="{{ route('admin.profile.update')}}"
+                   enctype="multipart/form-data">
+                   @csrf
                      <div class="row">
                        <div class="col-12">
                         <div class="row">
@@ -49,7 +51,7 @@
                                 <div class="form-group">
                                     <h5>Profile Picture <span class="text-danger">*</span></h5>
                                     <div class="controls">
-                                        <input id="image" type="file" name="file"
+                                        <input id="image" type="file" name="profile_photo_path"
                                         class="form-control" required="">
                                     </div>
                                 </div>
