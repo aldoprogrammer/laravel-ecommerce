@@ -18,7 +18,7 @@
            <div class="box-body">
              <div class="row">
                <div class="col">
-                   <form method="post" action=""
+                   <form method="post" action="{{ route('admin.password.update')}}"
                    >
                    @csrf
                      <div class="row">
@@ -31,7 +31,7 @@
                                     </h5>
                                     <div class="controls">
                                         <input type="password" id="current_password"
-                                        name="oldPassword" class="form-control"
+                                        name="oldpassword" class="form-control"
                                         required="" value="">
                                     </div>
                                 </div>
