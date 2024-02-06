@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\AdminProfileController;
+use App\Http\Controllers\Frontend\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +16,9 @@ use App\Http\Controllers\Backend\AdminProfileController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::group(['prefix'=> 'admin', 'middleware'=>['admin:admin']], function(){
 	Route::get('/login', [AdminController::class, 'loginForm']);
@@ -37,6 +38,10 @@ Route::get('/admin/profile/edit', [AdminProfileController::class, 'adminProfileE
 Route::post('/admin/profile/update', [AdminProfileController::class, 'adminProfileUpdate'])->name('admin.profile.update');
 Route::get('/admin/change/password', [AdminProfileController::class, 'adminChangePassword'])->name('admin.change.password');
 Route::post('/admin/password/update', [AdminProfileController::class, 'adminPasswordUpdate'])->name('admin.password.update');
+
+
+//route for FE
+Route::get('/', [IndexController::class, 'index']);
 
 
 Route::middleware(['auth:sanctum,web', 'verified'])->get('/dashboard', function () {
