@@ -2967,7 +2967,7 @@
                 <div class="products">
                   <div class="product">
                     <div class="product-image">
-                      <div class="image"> <a href="detail.html"><img  src="assets/images/products/p19.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="detail.html"><img  src="{{asset('frontend/assets/images/products/p19.jpg')}}" alt=""></a> </div>
                       <!-- /.image -->
 
                       <div class="tag new"><span>new</span></div>
@@ -3009,7 +3009,7 @@
                 <div class="products">
                   <div class="product">
                     <div class="product-image">
-                      <div class="image"> <a href="detail.html"><img  src="assets/images/products/p28.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="detail.html"><img  src="{{asset('frontend/assets/images/products/p28.jpg"')}} alt=""></a> </div>
                       <!-- /.image -->
 
                       <div class="tag new"><span>new</span></div>
