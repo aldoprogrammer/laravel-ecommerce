@@ -12,7 +12,8 @@
             <div class="head"><i class="icon fa fa-align-justify fa-fw"></i> Categories</div>
             <nav class="yamm megamenu-horizontal">
               <ul class="nav">
-                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-shopping-bag" aria-hidden="true"></i>Clothing</a>
+                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon fa fa-shopping-bag" aria-hidden="true"></i>Clothing</a>
                   <ul class="dropdown-menu mega-menu">
                     <li class="yamm-content">
                       <div class="row">
@@ -76,7 +77,8 @@
                   <!-- /.dropdown-menu --> </li>
                 <!-- /.menu-item -->
 
-                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-laptop" aria-hidden="true"></i>Electronics</a>
+                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon fa fa-laptop" aria-hidden="true"></i>Electronics</a>
                   <!-- ================================== MEGAMENU VERTICAL ================================== -->
                   <ul class="dropdown-menu mega-menu">
                     <li class="yamm-content">
@@ -109,7 +111,8 @@
                             <li><a href="#">Headphones</a></li>
                           </ul>
                         </div>
-                        <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="assets/images/banners/banner-side.png" /></a> </div>
+                        <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="{{asset('frontend/assets/images/banners/banner-side.png')}}" />
+                        </a> </div>
                       </div>
                       <!-- /.row -->
                     </li>
@@ -119,7 +122,8 @@
                   <!-- ================================== MEGAMENU VERTICAL ================================== --> </li>
                 <!-- /.menu-item -->
 
-                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-paw" aria-hidden="true"></i>Shoes</a>
+                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon fa fa-paw" aria-hidden="true"></i>Shoes</a>
                   <ul class="dropdown-menu mega-menu">
                     <li class="yamm-content">
                       <div class="row">
@@ -183,7 +187,8 @@
                   <!-- /.dropdown-menu --> </li>
                 <!-- /.menu-item -->
 
-                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-clock-o"></i>Watches</a>
+                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon fa fa-clock-o"></i>Watches</a>
                   <ul class="dropdown-menu mega-menu">
                     <li class="yamm-content">
                       <div class="row">
@@ -215,7 +220,8 @@
                             <li><a href="#">Headphones</a></li>
                           </ul>
                         </div>
-                        <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="assets/images/banners/banner-side.png" /></a> </div>
+                        <div class="dropdown-banner-holder"> <a href="#"><img alt=""
+                            src="{{asset("frontend/assets/images/banners/banner-side.png")}}" /></a> </div>
                       </div>
                       <!-- /.row -->
                     </li>
@@ -224,7 +230,8 @@
                   <!-- /.dropdown-menu --> </li>
                 <!-- /.menu-item -->
 
-                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-diamond"></i>Jewellery</a>
+                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon fa fa-diamond"></i>Jewellery</a>
                   <ul class="dropdown-menu mega-menu">
                     <li class="yamm-content">
                       <div class="row">
@@ -288,7 +295,8 @@
                   <!-- /.dropdown-menu --> </li>
                 <!-- /.menu-item -->
 
-                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-heartbeat"></i>Health and Beauty</a>
+                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle"
+                    data-toggle="dropdown"><i class="icon fa fa-heartbeat"></i>Health and Beauty</a>
                   <ul class="dropdown-menu mega-menu">
                     <li class="yamm-content">
                       <div class="row">
@@ -320,7 +328,8 @@
                             <li><a href="#">Headphones</a></li>
                           </ul>
                         </div>
-                        <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="assets/images/banners/banner-side.png" /></a> </div>
+                        <div class="dropdown-banner-holder"> <a href="#"><img alt=""
+                             src="{{asset('frontend/assets/images/banners/banner-side.png')}}" /></a> </div>
                       </div>
                       <!-- /.row -->
                     </li>
@@ -329,17 +338,20 @@
                   <!-- /.dropdown-menu --> </li>
                 <!-- /.menu-item -->
 
-                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-paper-plane"></i>Kids and Babies</a>
+                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle"
+                    data-toggle="dropdown"><i class="icon fa fa-paper-plane"></i>Kids and Babies</a>
                   <!-- /.dropdown-menu --> </li>
                 <!-- /.menu-item -->
 
-                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-futbol-o"></i>Sports</a>
+                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle"
+                    data-toggle="dropdown"><i class="icon fa fa-futbol-o"></i>Sports</a>
                   <!-- ================================== MEGAMENU VERTICAL ================================== -->
                   <!-- /.dropdown-menu -->
                   <!-- ================================== MEGAMENU VERTICAL ================================== --> </li>
                 <!-- /.menu-item -->
 
-                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-envira"></i>Home and Garden</a>
+                <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon fa fa-envira"></i>Home and Garden</a>
                   <!-- /.dropdown-menu --> </li>
                 <!-- /.menu-item -->
 
@@ -358,7 +370,7 @@
               <div class="item">
                 <div class="products">
                   <div class="hot-deal-wrapper">
-                    <div class="image"> <img src="assets/images/hot-deals/p25.jpg" alt=""> </div>
+                    <div class="image"> <img src="{{asset('frontend/assets/images/hot-deals/p25.jpg')}}" alt=""> </div>
                     <div class="sale-offer-tag"><span>49%<br>
                       off</span></div>
                     <div class="timing-wrapper">
@@ -381,7 +393,8 @@
                   <div class="product-info text-left m-t-20">
                     <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
                     <div class="rating rateit-small"></div>
-                    <div class="product-price"> <span class="price"> $600.00 </span> <span class="price-before-discount">$800.00</span> </div>
+                    <div class="product-price"> <span class="price"> $600.00 </span>
+                        <span class="price-before-discount">$800.00</span> </div>
                     <!-- /.product-price -->
 
                   </div>
@@ -390,7 +403,8 @@
                   <div class="cart clearfix animate-effect">
                     <div class="action">
                       <div class="add-cart-button btn-group">
-                        <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                        <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+                             <i class="fa fa-shopping-cart"></i> </button>
                         <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                       </div>
                     </div>
@@ -402,7 +416,7 @@
               <div class="item">
                 <div class="products">
                   <div class="hot-deal-wrapper">
-                    <div class="image"> <img src="assets/images/hot-deals/p5.jpg" alt=""> </div>
+                    <div class="image"> <img src="{{asset('frontend/assets/images/hot-deals/p5.jpg')}}" alt=""> </div>
                     <div class="sale-offer-tag"><span>35%<br>
                       off</span></div>
                     <div class="timing-wrapper">
@@ -425,7 +439,8 @@
                   <div class="product-info text-left m-t-20">
                     <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
                     <div class="rating rateit-small"></div>
-                    <div class="product-price"> <span class="price"> $600.00 </span> <span class="price-before-discount">$800.00</span> </div>
+                    <div class="product-price"> <span class="price"> $600.00 </span>
+                         <span class="price-before-discount">$800.00</span> </div>
                     <!-- /.product-price -->
 
                   </div>
@@ -434,7 +449,8 @@
                   <div class="cart clearfix animate-effect">
                     <div class="action">
                       <div class="add-cart-button btn-group">
-                        <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                        <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+                             <i class="fa fa-shopping-cart"></i> </button>
                         <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                       </div>
                     </div>
@@ -446,7 +462,7 @@
               <div class="item">
                 <div class="products">
                   <div class="hot-deal-wrapper">
-                    <div class="image"> <img src="assets/images/hot-deals/p10.jpg" alt=""> </div>
+                    <div class="image"> <img src="{{asset('frontend/assets/images/hot-deals/p10.jpg')}}" alt=""> </div>
                     <div class="sale-offer-tag"><span>35%<br>
                       off</span></div>
                     <div class="timing-wrapper">
@@ -469,7 +485,8 @@
                   <div class="product-info text-left m-t-20">
                     <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
                     <div class="rating rateit-small"></div>
-                    <div class="product-price"> <span class="price"> $600.00 </span> <span class="price-before-discount">$800.00</span> </div>
+                    <div class="product-price"> <span class="price"> $600.00 </span>
+                        <span class="price-before-discount">$800.00</span> </div>
                     <!-- /.product-price -->
 
                   </div>
@@ -478,7 +495,8 @@
                   <div class="cart clearfix animate-effect">
                     <div class="action">
                       <div class="add-cart-button btn-group">
-                        <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
+                        <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+                             <i class="fa fa-shopping-cart"></i> </button>
                         <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
                       </div>
                     </div>
@@ -505,7 +523,7 @@
                         <div class="row product-micro-row">
                           <div class="col col-xs-5">
                             <div class="product-image">
-                              <div class="image"> <a href="#"> <img src="assets/images/products/p30.jpg" alt=""> </a> </div>
+                              <div class="image"> <a href="#"> <img src="{{asset('frontend/assets/images/products/p30.jpg')}}" alt=""> </a> </div>
                               <!-- /.image -->
 
                             </div>
@@ -533,7 +551,7 @@
                         <div class="row product-micro-row">
                           <div class="col col-xs-5">
                             <div class="product-image">
-                              <div class="image"> <a href="#"> <img src="assets/images/products/p29.jpg" alt=""> </a> </div>
+                              <div class="image"> <a href="#"> <img src="{{asset('frontend/assets/images/products/p29.jpg')}}" alt=""> </a> </div>
                               <!-- /.image -->
 
                             </div>
@@ -561,95 +579,8 @@
                         <div class="row product-micro-row">
                           <div class="col col-xs-5">
                             <div class="product-image">
-                              <div class="image"> <a href="#"> <img src="assets/images/products/p28.jpg" alt=""> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> $450.99 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="products special-product">
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="#"> <img src="assets/images/products/p27.jpg" alt=""> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> $450.99 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="#"> <img src="assets/images/products/p26.jpg" alt=""> </a> </div>
-                              <!-- /.image -->
-
-                            </div>
-                            <!-- /.product-image -->
-                          </div>
-                          <!-- /.col -->
-                          <div class="col col-xs-7">
-                            <div class="product-info">
-                              <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
-                              <div class="rating rateit-small"></div>
-                              <div class="product-price"> <span class="price"> $450.99 </span> </div>
-                              <!-- /.product-price -->
-
-                            </div>
-                          </div>
-                          <!-- /.col -->
-                        </div>
-                        <!-- /.product-micro-row -->
-                      </div>
-                      <!-- /.product-micro -->
-
-                    </div>
-                    <div class="product">
-                      <div class="product-micro">
-                        <div class="row product-micro-row">
-                          <div class="col col-xs-5">
-                            <div class="product-image">
-                              <div class="image"> <a href="#"> <img src="assets/images/products/p25.jpg" alt=""> </a> </div>
+                              <div class="image"> <a href="#"> <img src="{{asset('frontendassets/images/products/p28.jpg')}}"
+                                alt=""> </a> </div>
                               <!-- /.image -->
 
                             </div>
@@ -681,7 +612,8 @@
                         <div class="row product-micro-row">
                           <div class="col col-xs-5">
                             <div class="product-image">
-                              <div class="image"> <a href="#"> <img src="assets/images/products/p24.jpg"  alt=""> </a> </div>
+                              <div class="image"> <a href="#">
+                                 <img src="{{asset('frontend/assets/images/products/p27.jpg')}}" alt=""> </a> </div>
                               <!-- /.image -->
 
                             </div>
@@ -709,7 +641,101 @@
                         <div class="row product-micro-row">
                           <div class="col col-xs-5">
                             <div class="product-image">
-                              <div class="image"> <a href="#"> <img src="assets/images/products/p23.jpg" alt=""> </a> </div>
+                              <div class="image"> <a href="#">
+                                 <img src="{{asset("frontend/assets/images/products/p26.jpg")}}" alt=""> </a> </div>
+                              <!-- /.image -->
+
+                            </div>
+                            <!-- /.product-image -->
+                          </div>
+                          <!-- /.col -->
+                          <div class="col col-xs-7">
+                            <div class="product-info">
+                              <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                              <div class="rating rateit-small"></div>
+                              <div class="product-price"> <span class="price"> $450.99 </span> </div>
+                              <!-- /.product-price -->
+
+                            </div>
+                          </div>
+                          <!-- /.col -->
+                        </div>
+                        <!-- /.product-micro-row -->
+                      </div>
+                      <!-- /.product-micro -->
+
+                    </div>
+                    <div class="product">
+                      <div class="product-micro">
+                        <div class="row product-micro-row">
+                          <div class="col col-xs-5">
+                            <div class="product-image">
+                              <div class="image"> <a href="#">
+                                <img src="{{asset('frontend/assets/images/products/p25.jpg')}}" alt="">
+                            </a>
+                        </div>
+                              <!-- /.image -->
+
+                            </div>
+                            <!-- /.product-image -->
+                          </div>
+                          <!-- /.col -->
+                          <div class="col col-xs-7">
+                            <div class="product-info">
+                              <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                              <div class="rating rateit-small"></div>
+                              <div class="product-price"> <span class="price"> $450.99 </span> </div>
+                              <!-- /.product-price -->
+
+                            </div>
+                          </div>
+                          <!-- /.col -->
+                        </div>
+                        <!-- /.product-micro-row -->
+                      </div>
+                      <!-- /.product-micro -->
+
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="products special-product">
+                    <div class="product">
+                      <div class="product-micro">
+                        <div class="row product-micro-row">
+                          <div class="col col-xs-5">
+                            <div class="product-image">
+                              <div class="image"> <a href="#">
+                                <img src="{{asset('frontend/assets/images/products/p24.jpg')}}"  alt=""> </a> </div>
+                              <!-- /.image -->
+
+                            </div>
+                            <!-- /.product-image -->
+                          </div>
+                          <!-- /.col -->
+                          <div class="col col-xs-7">
+                            <div class="product-info">
+                              <h3 class="name"><a href="#">Floral Print Shirt</a></h3>
+                              <div class="rating rateit-small"></div>
+                              <div class="product-price"> <span class="price"> $450.99 </span> </div>
+                              <!-- /.product-price -->
+
+                            </div>
+                          </div>
+                          <!-- /.col -->
+                        </div>
+                        <!-- /.product-micro-row -->
+                      </div>
+                      <!-- /.product-micro -->
+
+                    </div>
+                    <div class="product">
+                      <div class="product-micro">
+                        <div class="row product-micro-row">
+                          <div class="col col-xs-5">
+                            <div class="product-image">
+                              <div class="image"> <a href="#">
+                                <img src="{{asset('frontend/assets/images/products/p23.jpg')}}" alt=""> </a> </div>
                               <!-- /.image -->
 
                             </div>

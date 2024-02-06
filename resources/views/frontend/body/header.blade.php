@@ -17,14 +17,16 @@
 
           <div class="cnt-block">
             <ul class="list-unstyled list-inline">
-              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">USD </span><b class="caret"></b></a>
+              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle"
+                data-hover="dropdown" data-toggle="dropdown"><span class="value">USD </span><b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">USD</a></li>
                   <li><a href="#">INR</a></li>
                   <li><a href="#">GBP</a></li>
                 </ul>
               </li>
-              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">English </span><b class="caret"></b></a>
+              <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle"
+                data-hover="dropdown" data-toggle="dropdown"><span class="value">English </span><b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">English</a></li>
                   <li><a href="#">French</a></li>
@@ -60,7 +62,8 @@
               <form>
                 <div class="control-group">
                   <ul class="categories-filter animate-dropdown">
-                    <li class="dropdown"> <a class="dropdown-toggle"  data-toggle="dropdown" href="category.html">Categories <b class="caret"></b></a>
+                    <li class="dropdown"> <a class="dropdown-toggle"  data-toggle="dropdown" href="category.html">
+                        Categories <b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu" >
                         <li class="menu-header">Computer</li>
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Clothing</a></li>
@@ -202,7 +205,11 @@
                             </div>
                             <!-- /.col -->
 
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-menu banner-image"> <img class="img-responsive" src="assets/images/banners/top-menu-banner.jpg" alt=""> </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-menu banner-image">
+                                <img class="img-responsive"
+                                src="{{asset('frontend/assets/images/banners/top-menu-banner.jpg')}}"
+                                alt="">
+                            </div>
                             <!-- /.yamm-content -->
                           </div>
                         </div>
