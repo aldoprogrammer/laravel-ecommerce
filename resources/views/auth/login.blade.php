@@ -117,7 +117,7 @@
          <div class="form-group">
 		    <label class="info-title" for="password_confirmation">Confirm Password <span>*</span></label>
 		    <input type="password" class="form-control
-			unicase-form-control text-input"
+			unicase-form-control text-input" name="password_confirmation"
 			id="password_confirmation" >
             @error('password_confirmation')
                 <span class="invalid-feedback"
