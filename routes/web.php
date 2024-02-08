@@ -58,3 +58,4 @@ Route::get('/user/logout', [IndexController::class, 'userLogout'])->name('user.l
 Route::get('/user/profile/edit', [IndexController::class, 'userProfileEdit'])->name('user.profile.edit');
 Route::post('/user/profile/update', [IndexController::class, 'userProfileUpdate'])->name('user.profile.update');
 Route::get('/user/change/password', [IndexController::class, 'changePassword'])->name('user.change.password');
+Route::post('/user/update/password', [IndexController::class, 'updatePassword'])->name('user.password.update');

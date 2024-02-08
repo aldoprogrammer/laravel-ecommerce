@@ -39,7 +39,7 @@
                             <span class="text-danger">Change Password</span>
                         </h3>
                         <form
-                            action="{{ route('user.profile.update') }}"
+                            action="{{ route('user.password.update') }}"
                             method="post">
                             @csrf
                             <div class="form-group">
@@ -49,7 +49,6 @@
                                 <input type="password"
                                 class="form-control
                                 unicase-form-control text-input"
-
                                 id="current_password" name="current_password" >
                                 @error('current_password')
                                     <span class="invalid-feedback"
