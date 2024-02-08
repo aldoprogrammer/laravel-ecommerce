@@ -42,6 +42,7 @@ Route::get('/admin/change/password', [AdminProfileController::class, 'adminChang
 Route::post('/admin/password/update', [AdminProfileController::class, 'adminPasswordUpdate'])->name('admin.password.update');
 
 
+
 //route for FE
 Route::get('/', [IndexController::class, 'index']);
 
@@ -56,3 +57,4 @@ Route::middleware(['auth:sanctum,web', 'verified'])->get('/dashboard', function 
 Route::get('/user/logout', [IndexController::class, 'userLogout'])->name('user.logout');
 Route::get('/user/profile/edit', [IndexController::class, 'userProfileEdit'])->name('user.profile.edit');
 Route::post('/user/profile/update', [IndexController::class, 'userProfileUpdate'])->name('user.profile.update');
+Route::get('/user/change/password', [IndexController::class, 'changePassword'])->name('user.change.password');
