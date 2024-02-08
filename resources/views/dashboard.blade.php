@@ -7,9 +7,9 @@
                 <div class="col-md-2">
                     <br>
                     <img class="card-img-top mt-3 mb-3"
-                    src="{{ (!empty($adminData->profile_photo_path))
-                      ? url('upload/admin_images/'.$adminData->profile_photo_path)
-                      : url('upload/no_image.jpg')}}"
+                    src="{{ (!empty($user->profile_photo_path))
+                        ? url('upload/user_images/'.$user->profile_photo_path)
+                        : url('upload/no_image.jpg')}}"
                     alt="User Avatar"
                     style="border-radius: 50%;" height="100%" width="100%"
                     >

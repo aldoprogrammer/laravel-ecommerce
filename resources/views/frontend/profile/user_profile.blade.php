@@ -8,13 +8,13 @@
                     <br>
                     <img class="card-img-top mt-3 mb-3"
                     src="{{ (!empty($user->profile_photo_path))
-                      ? url('upload/admin_images/'.$user->profile_photo_path)
+                      ? url('upload/user_images/'.$user->profile_photo_path)
                       : url('upload/no_image.jpg')}}"
                     alt="User Avatar"
                     style="border-radius: 50%;" height="100%" width="100%"
                     >
                     <li class="list-group list-group-flush">
-                        <a href="" class="btn btn-primary btn-sm
+                        <a href="{{ route('dashboard')}}" class="btn btn-primary btn-sm
                         btn-block">
                             Home
                         </a>
@@ -40,7 +40,7 @@
                             <strong>{{ Auth::user()->name }}</strong>
                             Edit Profile
                         </h3>
-                        <form action="" method="post" enctype="multipart/form-data">
+                        <form action="{{ route('user.profile.update') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
                                 <label class="info-title" for="name">Name</label>
