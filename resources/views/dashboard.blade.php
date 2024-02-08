@@ -18,7 +18,7 @@
                         btn-block">
                             Home
                         </a>
-                        <a href="" class="btn btn-primary btn-sm
+                        <a href="{{ route('user.profile.edit')}}" class="btn btn-primary btn-sm
                         btn-block">
                             Profile Update
                         </a>
@@ -26,7 +26,7 @@
                         btn-block">
                             Change Password
                         </a>
-                        <a href="" class="btn btn-danger btn-sm
+                        <a href="{{route('user.logout')}}" class="btn btn-danger btn-sm
                         btn-block">
                             Logout
                         </a>
