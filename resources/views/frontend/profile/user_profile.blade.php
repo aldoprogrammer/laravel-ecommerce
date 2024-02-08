@@ -22,7 +22,7 @@
                         btn-block">
                             Profile Update
                         </a>
-                        <a href="" class="btn btn-primary btn-sm
+                        <a href="{{ route('user.change.password')}}" class="btn btn-primary btn-sm
                         btn-block">
                             Change Password
                         </a>

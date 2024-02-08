@@ -8,13 +8,13 @@
                     <br>
                     <img class="card-img-top mt-3 mb-3"
                     src="{{ (!empty($user->profile_photo_path))
-                        ? url('upload/user_images/'.$user->profile_photo_path)
-                        : url('upload/no_image.jpg')}}"
+                      ? url('upload/user_images/'.$user->profile_photo_path)
+                      : url('upload/no_image.jpg')}}"
                     alt="User Avatar"
                     style="border-radius: 50%;" height="100%" width="100%"
                     >
                     <li class="list-group list-group-flush">
-                        <a href="" class="btn btn-primary btn-sm
+                        <a href="{{ route('dashboard')}}" class="btn btn-primary btn-sm
                         btn-block">
                             Home
                         </a>
