@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\AdminProfileController;
+use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Frontend\IndexController;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -29,7 +30,7 @@ Route::group(['prefix'=> 'admin', 'middleware'=>['admin:admin']], function(){
 
 
 
-
+// admin
 Route::middleware(['auth:sanctum,admin', 'verified'])->get('/admin/dashboard', function () {
     return view('admin.index');
 })->name('dashboard');
@@ -40,6 +41,12 @@ Route::get('/admin/profile/edit', [AdminProfileController::class, 'adminProfileE
 Route::post('/admin/profile/update', [AdminProfileController::class, 'adminProfileUpdate'])->name('admin.profile.update');
 Route::get('/admin/change/password', [AdminProfileController::class, 'adminChangePassword'])->name('admin.change.password');
 Route::post('/admin/password/update', [AdminProfileController::class, 'adminPasswordUpdate'])->name('admin.password.update');
+
+Route::prefix('brand')->group(function(){
+
+    Route::get('/view',[BrandController::class, 'viewBrand'])->name('all.brand');
+
+});
 
 
 
