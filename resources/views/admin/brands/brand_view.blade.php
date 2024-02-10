@@ -30,11 +30,13 @@
                                                     <tr role="row" class="odd">
                                                         <td>{{ $item->brand_name_en }}</td>
                                                         <td>{{ $item->brand_name_ind }}</td>
-                                                        <td><img src="{{ $item->brand_image }}" alt=""></td>
                                                         <td>
-                                                            <a href="{{ route('brand.edit', $item->id) }}"
+                                                            <img src="{{ asset($item->brand_image) }}" alt="">
+                                                        </td>
+                                                        <td>
+                                                            <a href=""
                                                                 class="btn btn-info">Edit</a>
-                                                            <a href="{{ route('brand.delete', $item->id) }}"
+                                                            <a href=""
                                                                 class="btn btn-danger">Delete</a>
                                                         </td>
                                                     </tr>
@@ -106,6 +108,9 @@
                                     <input type="text"
                                     name="brand_name_en" class="form-control"
                                     >
+                                    @error('brand_name_en')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="form-group">
@@ -116,6 +121,9 @@
                                     <input type="text"
                                     name="brand_name_ind" class="form-control"
                                     >
+                                    @error('brand_name_ind')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="form-group">
@@ -124,6 +132,9 @@
                                 </h5>
                                 <div class="controls">
                                     <input type="file" name="brand_image" class="form-control">
+                                    @error('brand_image')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="text-xs-right">

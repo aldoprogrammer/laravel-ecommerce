@@ -45,7 +45,7 @@ Route::post('/admin/password/update', [AdminProfileController::class, 'adminPass
 Route::prefix('brand')->group(function(){
 
     Route::get('/view',[BrandController::class, 'viewBrand'])->name('all.brand');
-    Route::get('/store',[BrandController::class, 'brandStore'])->name('brand.store');
+    Route::post('/store',[BrandController::class, 'brandStore'])->name('brand.store');
 });
 
 
