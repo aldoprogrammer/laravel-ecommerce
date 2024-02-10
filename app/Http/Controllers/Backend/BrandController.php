@@ -104,4 +104,18 @@ class BrandController extends Controller
         }
     }
 
+
+    public function brandDelete($id)
+    {
+        $brand = Brand::findOrFail($id);
+        $img = $brand->brand_image;
+        unlink($img);
+        Brand::findOrFail($id)->delete();
+        $notification = array(
+            'message' => 'Brand Data Deleted Successfully',
+            'alert-type' => 'info'
+        );
+        return redirect()->back()->with($notification);
+    }
+
 }
