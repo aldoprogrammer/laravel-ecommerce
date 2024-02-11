@@ -59,7 +59,7 @@ Route::prefix('category')->group(function(){
     Route::post('/store',[CategoryController::class, 'categoryStore'])->name('category.store');
     Route::get('/edit/{id}',[CategoryController::class, 'categoryEdit'])->name('category.edit');
     Route::post('/update/{id}',[CategoryController::class, 'categoryUpdate'])->name('category.update');
-    Route::get('/delete/{id}',[BrandController::class, 'brandDelete'])->name('brand.delete');
+    Route::get('/delete/{id}',[CategoryController::class, 'categoryDelete'])->name('category.delete');
 
 });
 

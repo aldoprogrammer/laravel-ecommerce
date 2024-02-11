@@ -38,7 +38,7 @@
                                                             <a href="{{ route('category.edit', $item->id) }}"
                                                                 class="btn btn-info">
                                                             <i class="fa fa-edit"></i></a>
-                                                            <a href=""
+                                                            <a href="{{ route('category.delete', $item->id) }}"
                                                             id="delete"
                                                                 class="btn btn-danger">
                                                             <i class="fa fa-trash"></i>
