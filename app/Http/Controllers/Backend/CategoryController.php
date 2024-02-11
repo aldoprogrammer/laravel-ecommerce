@@ -36,9 +36,32 @@ class CategoryController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'category Data Inserted Successfully',
+            'message' => 'Category Data Inserted Successfully',
             'alert-type' => 'success'
         );
         return redirect()->back()->with($notification);
+    }
+
+    public function categoryEdit($id)
+    {
+        $category = Category::findOrFail($id);
+        return view('admin.category.category_edit', compact('category'));
+    }
+
+    public function categoryUpdate(Request $request, $id)
+    {
+        Category::findOrFail($id)->update([
+            'category_name_en' => $request->category_name_en,
+            'category_name_ind' => $request->category_name_ind,
+            'category_slug_en' => strtolower(str_replace(' ', '-', $request->category_name_en)),
+            'category_slug_ind' => strtolower(str_replace(' ', '-', $request->category_name_ind)),
+            'category_icon' => $request->category_icon,
+        ]);
+
+        $notification = array(
+            'message' => 'Category Data Updated Successfully',
+            'alert-type' => 'success'
+        );
+        return redirect()->route('all.category')->with($notification);
     }
 }

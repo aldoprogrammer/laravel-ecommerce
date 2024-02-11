@@ -57,8 +57,8 @@ Route::prefix('category')->group(function(){
 
     Route::get('/view',[CategoryController::class, 'viewCategory'])->name('all.category');
     Route::post('/store',[CategoryController::class, 'categoryStore'])->name('category.store');
-    Route::get('/edit/{id}',[BrandController::class, 'brandEdit'])->name('brand.edit');
-    Route::post('/update',[BrandController::class, 'brandUpdate'])->name('brand.update');
+    Route::get('/edit/{id}',[CategoryController::class, 'categoryEdit'])->name('category.edit');
+    Route::post('/update/{id}',[CategoryController::class, 'categoryUpdate'])->name('category.update');
     Route::get('/delete/{id}',[BrandController::class, 'brandDelete'])->name('brand.delete');
 
 });

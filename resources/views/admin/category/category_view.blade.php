@@ -35,7 +35,7 @@
                                                         <td>{{ $item->category_name_ind }}</td>
 
                                                         <td>
-                                                            <a href=""
+                                                            <a href="{{ route('category.edit', $item->id) }}"
                                                                 class="btn btn-info">
                                                             <i class="fa fa-edit"></i></a>
                                                             <a href=""
