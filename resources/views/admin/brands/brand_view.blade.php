@@ -2,7 +2,7 @@
 @section('content')
     <section class="content">
         <div class="row">
-            <div class="col-8">
+            <div class="col-12 col-lg-8">
                 <div class="box">
                     <div class="box-header with-border">
                         <h3 class="box-title">Data Table Brands</h3>
@@ -94,7 +94,7 @@
                 <!-- /.box -->
 
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <div class="box">
                     <div class="box-header with-border">
                         <h3 class="box-title">Add Brands</h3>
