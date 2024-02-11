@@ -19,28 +19,30 @@
                                             role="grid" aria-describedby="example1_info">
                                             <thead>
                                                 <tr role="row">
+                                                    <th>Category Icon</th>
                                                     <th>Category En</th>
                                                     <th>Category Ind</th>
-                                                    <th>Category Icon</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 @foreach ($category as $item)
                                                     <tr role="row" class="odd">
+                                                        <td>
+                                                            <i class="{{ $item->category_icon }}"></i>
+                                                        </td>
                                                         <td>{{ $item->category_name_en }}</td>
                                                         <td>{{ $item->category_name_ind }}</td>
-                                                        <td>
-                                                            <img
-                                                            style="width: 100px"
-                                                            src="{{ asset($item->category_icon) }}" alt="">
-                                                        </td>
+
                                                         <td>
                                                             <a href=""
-                                                                class="btn btn-info">Edit</a>
+                                                                class="btn btn-info">
+                                                            <i class="fa fa-edit"></i></a>
                                                             <a href=""
                                                             id="delete"
-                                                                class="btn btn-danger">Delete</a>
+                                                                class="btn btn-danger">
+                                                            <i class="fa fa-trash"></i>
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                 @endforeach
