@@ -99,8 +99,8 @@
                     <div class="box-header with-border">
                         <h3 class="box-title">Add Category</h3>
                     </div>
-                    <form action=""
-                    method="post" enctype="multipart/form-data">
+                    <form action="{{ route('category.store') }}"
+                    method="post">
                         @csrf
                         <div class="col-12">
                             <div class="form-group mt-2">
@@ -134,7 +134,7 @@
                                     <span class="text-danger">*</span>
                                 </h5>
                                 <div class="controls">
-                                    <input type="file" name="category_icon" class="form-control">
+                                    <input type="text" name="category_icon" class="form-control">
                                     @error('category_icon')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
