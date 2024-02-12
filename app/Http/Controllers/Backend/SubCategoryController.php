@@ -51,4 +51,12 @@ class SubCategoryController extends Controller
     }
 
 
+    public function subCategoryEdit($id)
+    {
+        $categories = Category::orderby('category_name_en', 'ASC')->get();
+        $subcategory = SubCategory::findOrFail($id);
+        return view('admin.category.subcategory_edit', compact('subcategory', 'categories'));
+    }
+
+
 }
