@@ -29,8 +29,8 @@
                                                 @foreach ($subcategory as $item)
                                                     <tr role="row" class="odd">
                                                         <td>{{ $item->category_id }}</td>
-                                                        <td>{{ $item->category_name_en }}</td>
-                                                        <td>{{ $item->category_name_ind }}</td>
+                                                        <td>{{ $item->subcategory_name_en }}</td>
+                                                        <td>{{ $item->subcategory_name_ind }}</td>
 
                                                         <td>
                                                             <a href="{{ route('category.edit', $item->id) }}"
@@ -99,8 +99,8 @@
                     <div class="box-header with-border">
                         <h3 class="box-title">Add SubCategory</h3>
                     </div>
-                    <form action="{{ route('category.store') }}"
-                    method="post">
+                    <form action="{{ route('subcategory.store') }}" method="post">
+
                         @csrf
                         <div class="col-12">
                             <div class="form-group">
@@ -108,9 +108,10 @@
                                 <div class="controls">
                                     <select name="category_id"
                                     id="" class="form-control">
-                                        <option value="">--- Pilih Category ---</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
+                                        <option selected="" disabled="">--- Pilih Category ---</option>
+                                        @foreach ($categories as $category)
+                                            <option value="{{ $category->id }}">{{ $category->category_name_en }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>
