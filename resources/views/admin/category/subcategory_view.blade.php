@@ -28,7 +28,7 @@
                                             <tbody>
                                                 @foreach ($subcategory as $item)
                                                     <tr role="row" class="odd">
-                                                        <td>{{ $item->category_id }}</td>
+                                                        <td>{{ $item->category->category_name_en }}</td>
                                                         <td>{{ $item->subcategory_name_en }}</td>
                                                         <td>{{ $item->subcategory_name_ind }}</td>
 
@@ -36,7 +36,7 @@
                                                             <a href="{{ route('subcategory.edit', $item->id) }}"
                                                                 class="btn btn-info">
                                                             <i class="fa fa-edit"></i></a>
-                                                            <a href="{{ route('category.delete', $item->id) }}"
+                                                            <a href="{{ route('subcategory.delete', $item->id) }}"
                                                             id="delete"
                                                                 class="btn btn-danger">
                                                             <i class="fa fa-trash"></i>
@@ -113,6 +113,9 @@
                                             <option value="{{ $category->id }}">{{ $category->category_name_en }}</option>
                                         @endforeach
                                     </select>
+                                    @error('category_id')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
                                 </div>
                             </div>
                             <div class="form-group mt-2">
@@ -156,4 +159,5 @@
         </div>
     </section>
 @endsection
+
 
