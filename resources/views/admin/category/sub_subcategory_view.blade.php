@@ -124,9 +124,9 @@
                             <div class="form-group">
                                 <h5>SubCategory List</h5>
                                 <div class="controls">
-                                    <select name="subcategory_id	"
+                                    <select name="subcategory_id"
                                     id="" class="form-control">
-                                        <option selected="" disabled="">--- Pilih SubCategory ---</option>
+                                        <option selected="" disabled="" >--- Pilih SubCategory ---</option>
                                     </select>
                                     @error('subcategory_id	')
                                     <span class="text-danger">{{ $message }}</span>
