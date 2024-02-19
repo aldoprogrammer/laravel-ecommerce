@@ -104,4 +104,38 @@ class SubCategoryController extends Controller
     }
 
 
+    public function subSubCategoryStore(Request $request)
+    {
+        $request->validate([
+            'category_id' => 'required',
+            'subcategory_id' => 'required',
+            'subsubcategory_name_en' => 'required',
+            'subsubcategory_name_ind' => 'required',
+        ],
+        [
+            'subsubcategory_name_en.required' => 'Input subsubcategory En Wajib Diisi',
+            'subsubcategory_name_ind.required' => 'Input subsubcategory Ind Wajib Diisi',
+            'category_id.required' => 'Kategori harap dipilih',
+            'subcategory_id.required' => 'Sub Kategori harap dipilih',
+        ]);
+
+        SubSubCategory::insert([
+            'category_id' => $request->category_id,
+            'subcategory_id' => $request->subcategory_id,
+            'subcategory_name_en' => $request->subcategory_name_en,
+            'subcategory_name_ind' => $request->subcategory_name_ind,
+            'subcategory_slug_en' => strtolower(str_replace(' ', '-', $request->subcategory_name_en)),
+            'subcategory_slug_ind' => strtolower(str_replace(' ', '-', $request->subcategory_name_ind)),
+        ]);
+
+
+            $notification = array(
+                'message' => 'SubCategory Data Inserted Successfully',
+                'alert-type' => 'success'
+            );
+            return redirect()->back()->with($notification);
+
+        }
+
+
 }

@@ -102,7 +102,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title">Add  Sub-SubCategory</h3>
                     </div>
-                    <form action="{{ route('subcategory.store') }}" method="post">
+                    <form action="{{ route('subsubcategory.store') }}" method="post">
 
                         @csrf
                         <div class="col-12">
