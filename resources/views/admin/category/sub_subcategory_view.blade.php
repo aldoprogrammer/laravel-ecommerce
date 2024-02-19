@@ -152,7 +152,7 @@
                                 </h5>
                                 <div class="controls">
                                     <input type="text"
-                                    name="subsubcategory_name_ind	" class="form-control"
+                                    name="subsubcategory_name_ind" class="form-control"
                                     >
                                     @error('subsubcategory_name_ind	')
                                         <span class="text-danger">{{ $message }}</span>
