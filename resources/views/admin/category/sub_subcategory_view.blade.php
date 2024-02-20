@@ -23,7 +23,7 @@
                                             <thead>
                                                 <tr role="row">
                                                     <th>Category</th>
-                                                    <th>Sub -> SubCategory En</th>
+                                                    <th>SubCategory Name</th>
                                                     <th>Sub -> SubCategory Ind</th>
                                                     <th>Action</th>
                                                 </tr>

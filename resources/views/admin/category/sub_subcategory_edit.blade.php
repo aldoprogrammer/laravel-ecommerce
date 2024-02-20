@@ -10,7 +10,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title">Edit Sub-SubCategory</h3>
                     </div>
-                    <form action="{{ route('subsubcategory.store') }}" method="post">
+                    <form action="{{ route('subsubcategory.update', $subsubcategory->id) }}" method="post">
 
                         @csrf
                         <div class="col-12">
