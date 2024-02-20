@@ -106,15 +106,7 @@ class SubCategoryController extends Controller
 
     public function subSubCategoryStore(Request $request)
     {
-        // $data = [
-        //     'category_id' => $request->category_id,
-        //     'subcategory_id' => $request->subcategory_id,
-        //     'subsubcategory_name_en' => $request->subsubcategory_name_en,
-        //     'subsubcategory_name_ind' => $request->subsubcategory_name_ind,
-        //     'subsubcategory_slug_en' => strtolower(str_replace(' ', '-', $request->subsubcategory_name_en)),
-        //     'subsubcategory_slug_ind' => strtolower(str_replace(' ', '-', $request->subsubcategory_name_ind)),
-        // ];
-        // dd($data);
+
 
         $request->validate([
             'category_id' => 'required',
@@ -146,6 +138,15 @@ class SubCategoryController extends Controller
             return redirect()->back()->with($notification);
 
         }
+
+
+    public function subSubCategoryEdit($id)
+    {
+        $categories = Category::orderby('category_name_en', 'ASC')->get();
+        $subcategories = SubCategory::orderby('subcategory_name_en', 'ASC')->get();
+        $subsubcategory = SubSubCategory::findOrFail($id);
+        return view('admin.category.sub_subcategory_edit', compact('subsubcategory', 'categories', 'subcategories'));
+    }
 
 
 }
