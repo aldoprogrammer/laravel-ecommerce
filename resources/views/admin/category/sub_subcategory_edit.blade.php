@@ -21,7 +21,7 @@
                                     id="" class="form-control">
                                         <option selected="" disabled="">--- Pilih Category ---</option>
                                         @foreach ($categories as $category)
-                                            <option value="{{ $category->id }}">{{ $category->category_name_en }}</option>
+                                            <option value="{{ $category->id }}" {{ $category->id == $subsubcategory->category_id ? 'selected' : ''}}>{{ $category->category_name_en }}</option>
                                         @endforeach
                                     </select>
                                     @error('category_id')
@@ -35,6 +35,9 @@
                                     <select name="subcategory_id"
                                     id="" class="form-control">
                                         <option selected="" disabled="" >--- Pilih SubCategory ---</option>
+                                        @foreach ($subcategories as $subcategory)
+                                            <option value="{{ $subcategory->id }}" {{ $subcategory->id == $subsubcategory->subcategory_id ? 'selected' : ''}}>{{ $subcategory->subcategory_name_en }}</option>
+                                        @endforeach
                                     </select>
                                     @error('subcategory_id	')
                                     <span class="text-danger">{{ $message }}</span>
