@@ -7,6 +7,7 @@ use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\SubCategoryController;
 use App\Http\Controllers\Frontend\IndexController;
+use App\Http\Controllers\Backend\ProductController;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
@@ -74,6 +75,16 @@ Route::prefix('category')->group(function(){
     Route::get('/sub/sub/edit/{id}',[SubCategoryController::class, 'subSubCategoryEdit'])->name('subsubcategory.edit');
     Route::post('/sub/sub/update/{id}',[SubCategoryController::class, 'subSubCategoryUpdate'])->name('subsubcategory.update');
     Route::get('/sub/sub/delete/{id}',[SubCategoryController::class, 'subSubCategoryDelete'])->name('subsubcategory.delete');
+
+});
+
+Route::prefix('products')->group(function(){
+
+    Route::get('/add-product',[ProductController::class, 'addProduct'])->name('add.product');
+    // Route::post('/store',[BrandController::class, 'brandStore'])->name('brand.store');
+    // Route::get('/edit/{id}',[BrandController::class, 'brandEdit'])->name('brand.edit');
+    // Route::post('/update',[BrandController::class, 'brandUpdate'])->name('brand.update');
+    // Route::get('/delete/{id}',[BrandController::class, 'brandDelete'])->name('brand.delete');
 
 });
 
