@@ -1,32 +1,13 @@
 @extends('admin.admin_master')
 @section('content')
 <div class="container-full">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-        <div class="d-flex align-items-center">
-            <div class="mr-auto">
-                <h3 class="page-title">Form Validation</h3>
-                <div class="d-inline-block align-items-center">
-                    <nav>
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
-                            <li class="breadcrumb-item" aria-current="page">Forms</li>
-                            <li class="breadcrumb-item active" aria-current="page">Form Validation</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Main content -->
     <section class="content">
 
      <!-- Basic Forms -->
       <div class="box">
         <div class="box-header with-border">
-          <h4 class="box-title">Form Validation</h4>
-          <h6 class="box-subtitle">Bootstrap Form Validation check the <a class="text-warning" href="http://reactiveraven.github.io/jqBootstrapValidation/">official website </a></h6>
+          <h4 class="box-title">Add Products</h4>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -93,6 +74,89 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Sub->SubCategory</h5>
+                                    <div class="controls">
+                                        <select name="subsubcategory_id"
+                                        id="" class="form-control">
+                                            <option selected="" disabled="">--- Pilih Sub-SubCategory ---</option>
+                                            {{-- @foreach ($brands as $item)
+                                                <option value="{{ $item->id }}"
+                                                    {{-- {{ $category->id == $subsubcategory->category_id ?
+                                                    'selected' : ''}}
+                                                    >{{ $item->brand_name_en }}
+                                                </option>
+                                            @endforeach --}}
+                                        </select>
+                                        @error('subsubcategory_id')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Product Name En</h5>
+                                    <div class="controls">
+                                        <input type="text" name="product_name_en" class="form-control">
+                                        @error('product_name_en')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Product Name Ind</h5>
+                                    <div class="controls">
+                                            <input type="text" name="product_name_ind" class="form-control">
+                                        @error('product_name_ind')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Product Code</h5>
+                                    <div class="controls">
+                                        <input type="text" name="product_code" class="form-control">
+                                        @error('product_code')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Product Slug En</h5>
+                                    <div class="controls">
+                                        <input type="text" name="product_slug_en" class="form-control">
+                                        @error('product_slug_en')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Product Slug Ind</h5>
+                                    <div class="controls">
+                                            <input type="text" name="product_slug_ind" class="form-control">
+                                        @error('product_slug_ind')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <h5>Email Field <span class="text-danger">*</span></h5>
                             <div class="controls">
