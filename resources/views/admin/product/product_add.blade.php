@@ -135,10 +135,10 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <h5>Product Slug En</h5>
+                                    <h5>Product Quantity</h5>
                                     <div class="controls">
-                                        <input type="text" name="product_slug_en" class="form-control">
-                                        @error('product_slug_en')
+                                        <input type="text" name="product_qty" class="form-control">
+                                        @error('product_qty')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                     </div>
@@ -146,15 +146,113 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <h5>Product Slug Ind</h5>
+                                    <h5>Product Selling Price</h5>
                                     <div class="controls">
-                                            <input type="text" name="product_slug_ind" class="form-control">
-                                        @error('product_slug_ind')
+                                            <input type="text" name="selling_price" class="form-control">
+                                        @error('selling_price')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Product Discount Price</h5>
+                                    <div class="controls">
+                                        <input type="text" name="discount_price" class="form-control">
+                                        @error('discount_price')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Thubmnail Products</h5>
+                                    <div class="controls">
+                                        <input type="file" name="product_thumbnail" class="form-control" required>
+
+                                        @error('product_thumbnail')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Multiple Image</h5>
+                                    <div class="controls">
+                                            <input type="text" name="multiple_img[]" class="form-control">
+
+                                        @error('multiple_img[]')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <h5>Deskripsi Singkat Bhasa Inggris</h5>
+                                    <div class="controls">
+                                        <textarea name="short_descp_en" class="form-control"
+                                        placeholder="masukkan deskripsi ">
+                                        </textarea>
+                                        @error('short_descp_en')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <h5>Deskripsi Singkat Indonesia</h5>
+                                    <div class="controls">
+                                        <textarea name="short_descp_ind" class="form-control"
+                                        placeholder="masukkan deskripsi indo ">
+                                        </textarea>
+                                        @error('short_descp_ind')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <h5>Deskripsi Panjang Bhasa Inggris</h5>
+                                    <div class="controls">
+                                        <textarea id="editor1" name="long_descp_en" rows="10" cols="80">
+                                            Spesifikasi barang:
+                                        </textarea>
+                                        @error('long_descp_en')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <h5>Deskripsi Panjang Indonesia</h5>
+                                    <div class="controls">
+                                        <textarea id="editor1" name="long_descp_ind" rows="10" cols="80">
+                                            Spesifikasi barang:
+                                        </textarea>
+                                        @error('long_descp_ind')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div class="form-group">
