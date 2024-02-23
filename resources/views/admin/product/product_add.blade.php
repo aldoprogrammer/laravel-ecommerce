@@ -35,6 +35,64 @@
                 <form novalidate>
                   <div class="row">
                     <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Brands List</h5>
+                                    <div class="controls">
+                                        <select name="brands_id"
+                                        id="" class="form-control">
+                                            <option selected="" disabled="">--- Pilih Brands ---</option>
+                                            @foreach ($brands as $item)
+                                                <option value="{{ $item->id }}"
+                                                    {{-- {{ $category->id == $subsubcategory->category_id ?
+                                                    'selected' : ''}} --}}
+                                                    >{{ $item->brand_name_en }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                        @error('brands_id')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Category List</h5>
+                                    <div class="controls">
+                                        <select name="category_id"
+                                        id="" class="form-control">
+                                            <option selected="" disabled="">--- Pilih Category ---</option>
+                                            @foreach ($categories as $item)
+                                                <option value="{{ $item->id }}"
+                                                    {{-- {{ $category->id == $subsubcategory->category_id ?
+                                                    'selected' : ''}} --}}
+                                                    >{{ $item->category_name_en }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                        @error('category_id')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Sub-Category List</h5>
+                                    <div class="controls">
+                                        <select name="subcategory_id"
+                                        id="" class="form-control">
+                                            <option selected="" disabled="">--- Pilih Sub-Category ---</option>
+                                        </select>
+                                        @error('subcategory_id')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <h5>Email Field <span class="text-danger">*</span></h5>
                             <div class="controls">
