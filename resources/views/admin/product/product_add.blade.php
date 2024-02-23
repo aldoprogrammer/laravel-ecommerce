@@ -243,7 +243,7 @@
                                 <div class="form-group">
                                     <h5>Deskripsi Panjang Indonesia</h5>
                                     <div class="controls">
-                                        <textarea id="editor1" name="long_descp_ind" rows="10" cols="80">
+                                        <textarea id="editor2" name="long_descp_ind" rows="10" cols="80">
                                             Spesifikasi barang:
                                         </textarea>
                                         @error('long_descp_ind')
