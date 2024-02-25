@@ -1,5 +1,8 @@
 @extends('admin.admin_master')
 @section('content')
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <div class="container-full">
     <!-- Main content -->
     <section class="content">
@@ -356,14 +359,14 @@
                             <div class="form-group">
                                 <div class="controls">
                                     <fieldset>
-                                        <input type="checkbox" id="checkbox_2"
+                                        <input type="checkbox" id="checkbox_4"
                                          value="1" name="special_offer">
-                                        <label for="checkbox_2">Special Offers</label>
+                                        <label for="checkbox_4">Special Offers</label>
                                     </fieldset>
                                     <fieldset>
-                                        <input type="checkbox" id="checkbox_3" value="1"
+                                        <input type="checkbox" id="checkbox_5" value="1"
                                         name="special_deals">
-                                        <label for="checkbox_3">Special Deals</label>
+                                        <label for="checkbox_5">Special Deals</label>
                                     </fieldset>
                                 </div>
                             </div>
@@ -388,4 +391,52 @@
     </section>
     <!-- /.content -->
   </div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('select[name="category_id"]').on('change', function(){
+            var category_id = $(this).val();
+            if(category_id){
+                $.ajax({
+                    url: "{{  url('/category/subcategory/ajax') }}/"+category_id,
+                    type:"GET",
+                    dataType:"json",
+                    success:function(data){
+                        var d =$('select[name="subcategory_id"]').empty();
+                        $.each(data, function(key, value){
+                            $('select[name="subcategory_id"]').append('<option value="'+ value.id +'">' +
+                                value.subcategory_name_en + '</option>');
+                        });
+                    },
+                });
+            }else{
+                alert('danger');
+            }
+            // console.log(category_id);
+        });
+        $('select[name="subcategory_id"]').on('change', function(){
+            var subcategory_id = $(this).val();
+            if(subcategory_id){
+                $.ajax({
+                    url: "{{  url('/category/subsubcategory/ajax') }}/"+subcategory_id,
+                    type:"GET",
+                    dataType:"json",
+                    success:function(data){
+                        var d =$('select[name="subsubcategory_id"]').empty();
+                        $.each(data, function(key, value){
+                            $('select[name="subsubcategory_id"]').append('<option value="'+ value.id +'">' +
+                                value.subsubcategory_name_en + '</option>');
+                        });
+                    },
+                });
+            }else{
+                alert('danger');
+            }
+            // console.log(category_id);
+        });
+    })
+
+
+
+
+</script>
 @endsection

@@ -98,9 +98,17 @@ class SubCategoryController extends Controller
 
     public function getSubCategoryAjax($category_id)
     {
-        $subcategory = SubCategory::where('category_id', $category_id)->orderBy('subcategory_name_en',
+        $category = SubCategory::where('category_id', $category_id)->orderBy('subcategory_name_en',
         'ASC')->get();
-        return json_encode($subcategory);
+        return json_encode($category);
+    }
+
+
+    public function getSubSubCategoryAjax($subcategory_id)
+    {
+        $subsubcategory = SubSubCategory::where('subcategory_id', $subcategory_id)->orderBy('subsubcategory_name_en',
+        'ASC')->get();
+        return json_encode($subsubcategory);
     }
 
 
@@ -177,6 +185,8 @@ class SubCategoryController extends Controller
         );
         return redirect()->back()->with($notification);
     }
+
+
 
 
 }
