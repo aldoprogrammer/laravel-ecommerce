@@ -250,7 +250,7 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <h5>Product Color En</h5>
-                                    <div class="controls">
+                                    <div class="tags-default">
                                         <input type="text" name="product_color_en" class="form-control"
                                         data-role="tagsinput" value="Red,Blue,White">
                                         @error('product_color_en')
@@ -333,59 +333,37 @@
                             </div>
 
                         </div>
-
-                        <div class="form-group">
-                            <h5>Email Field <span class="text-danger">*</span></h5>
-                            <div class="controls">
-                                <input type="email" name="email" class="form-control" required data-validation-required-message="This field is required"> </div>
-                        </div>
-                        <div class="form-group">
-                            <h5>File Input Field <span class="text-danger">*</span></h5>
-                            <div class="controls">
-                                <input type="file" name="file" class="form-control" required> </div>
-                        </div>
-                        <div class="form-group">
-                            <h5>Basic Select <span class="text-danger">*</span></h5>
-                            <div class="controls">
-                                <select name="select" id="select" required class="form-control">
-                                    <option value="">Select Your City</option>
-                                    <option value="1">India</option>
-                                    <option value="2">USA</option>
-                                    <option value="3">UK</option>
-                                    <option value="4">Canada</option>
-                                    <option value="5">Dubai</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <h5>Textarea <span class="text-danger">*</span></h5>
-                            <div class="controls">
-                                <textarea name="textarea" id="textarea" class="form-control" required placeholder="Textarea text"></textarea>
-                            </div>
-                        </div>
                     </div>
                   </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <h5>Checkbox <span class="text-danger">*</span></h5>
                                 <div class="controls">
-                                    <input type="checkbox" id="checkbox_1" required value="single">
-                                    <label for="checkbox_1">Check this custom checkbox</label>
+                                    <fieldset>
+                                        <input type="checkbox" id="checkbox_2"
+                                        value="1" name="hot_deals">
+                                        <label for="checkbox_2">Hot Deals</label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input type="checkbox" id="checkbox_3" value="1"
+                                        name="featured">
+                                        <label for="checkbox_3">Featured</label>
+                                    </fieldset>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <h5>Checkbox Group <span class="text-danger">*</span></h5>
                                 <div class="controls">
                                     <fieldset>
-                                        <input type="checkbox" id="checkbox_2" required value="x">
-                                        <label for="checkbox_2">I am unchecked Checkbox</label>
+                                        <input type="checkbox" id="checkbox_2"
+                                         value="1" name="special_offer">
+                                        <label for="checkbox_2">Special Offers</label>
                                     </fieldset>
                                     <fieldset>
-                                        <input type="checkbox" id="checkbox_3" value="y">
-                                        <label for="checkbox_3">I am unchecked too</label>
+                                        <input type="checkbox" id="checkbox_3" value="1"
+                                        name="special_deals">
+                                        <label for="checkbox_3">Special Deals</label>
                                     </fieldset>
                                 </div>
                             </div>
