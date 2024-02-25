@@ -106,9 +106,9 @@ class SubCategoryController extends Controller
 
     public function getSubSubCategoryAjax($subcategory_id)
     {
-        $subsubcategory = SubSubCategory::where('subcategory_id', $subcategory_id)->orderBy('subsubcategory_name_en',
+        $subcategory = SubSubCategory::where('subcategory_id', $subcategory_id)->orderBy('subsubcategory_name_en',
         'ASC')->get();
-        return json_encode($subsubcategory);
+        return json_encode($subcategory);
     }
 
 
