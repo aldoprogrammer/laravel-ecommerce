@@ -196,6 +196,45 @@
                         </div>
 
                         <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Product Tags En</h5>
+                                    <div class="controls">
+                                        <input type="text" name="product_tags_en" class="form-control"
+                                        data-role="tagsinput" value="Lorem,Ipsum,Amet">
+                                        @error('product_tags_en')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Product Tags Ind</h5>
+                                    <div class="controls">
+                                        <input type="text" name="product_tags_ind" class="form-control"
+                                        data-role="tagsinput" value="Lorem,Ipsum,Amet">
+                                        @error('product_tags_ind')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <h5>Product Size En</h5>
+                                    <div class="controls">
+                                        <input type="text" name="product_size_en" class="form-control"
+                                        data-role="tagsinput" value="XL,M,L">
+                                        @error('product_size_en')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <h5>Deskripsi Singkat Bhasa Inggris</h5>
